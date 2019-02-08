@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="714a212d-03aa-49b2-b6f1-daa6d6f3d8a2" name="Aurel Dragut" url="http://shopify.aureldragut.com">
+        <fileTransfer host="aureldragut.com" port="21" rootFolder="/shopify.aureldragut.com">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" showHiddenFiles="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="e53f7444-2ef5-477e-a92a-bfd680d9e54d" name="Server" url="http://adws.go.ro">
+        <fileTransfer host="adws.go.ro" port="22" rootFolder="/var/www/html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions compatibilityMode="true" dataProtectionLevel="Private" passiveMode="true" showHiddenFiles="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
