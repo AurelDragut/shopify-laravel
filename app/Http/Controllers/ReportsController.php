@@ -18,7 +18,7 @@ class ReportsController extends Controller
         );
 
         foreach (Product::all() as $product) {
-            dd($product);
+            dd($product->barcode);
         }
     }
 }
