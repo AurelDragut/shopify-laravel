@@ -18,7 +18,12 @@ class ReportsController extends Controller
         );
 
         foreach (Product::all() as $product) {
-            dd($product->barcode);
+            $optionalParams = [
+                'IdType'  => 'EAN',
+                'IdList.Id.1' => $product->barcode,
+            ];
+            $response = $client->send('GetMatchingProductForId', '/Products/2011-10-01', $optionalParams);
+            dd($response);
         }
     }
 }
