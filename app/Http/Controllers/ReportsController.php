@@ -23,8 +23,9 @@ class ReportsController extends Controller
                 'IdType'  => 'EAN',
                 'IdList.Id.1' => $product->barcode,
             ];
+            sleep(5);
             $response = $client->send('GetMatchingProductForId', '/Products/2011-10-01', $optionalParams);
-            dd($response);
+            $product->update(['response' => $response]);
         }
     }
 }
