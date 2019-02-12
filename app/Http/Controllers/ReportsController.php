@@ -19,6 +19,7 @@ class ReportsController extends Controller
 
         foreach (Product::all() as $product) {
             $optionalParams = [
+                'MarketplaceId' => env('MWS_MARKETPLACE_ID'),
                 'IdType'  => 'EAN',
                 'IdList.Id.1' => $product->barcode,
             ];
