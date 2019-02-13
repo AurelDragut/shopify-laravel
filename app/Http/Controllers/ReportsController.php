@@ -26,7 +26,7 @@ class ReportsController extends Controller
             sleep(5);
             $response = $client->send('GetMatchingProductForId', '/Products/2011-10-01', $optionalParams);
             $product->update(['response' => \GuzzleHttp\json_encode($response)]);
-            dd($response);
+            dd($response->GetMatchingProductForIdResult->Products);
         }
     }
 }
