@@ -17,7 +17,7 @@ class ReportsController extends Controller
             'https://mws.amazonservices.it'
         );
 
-        foreach (Product::all() as $product) {
+        foreach (Product::where('response','like','{"Product"%') as $product) {
             $optionalParams = [
                 'MarketplaceId' => env('MWS_MARKETPLACE_ID'),
                 'IdType'  => 'EAN',
