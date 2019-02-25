@@ -30,4 +30,4 @@ Route::get('/proxy', function () {
 })->middleware('auth.proxy');
 
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
-
+Route::get('/tests','ReportsController@getReport');
