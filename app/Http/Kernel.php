@@ -20,7 +20,6 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
         \App\Http\Middleware\FrameHeadersMiddleware::class,
-        \App\Http\Middleware\FrameHeadersMiddleware::class,
     ];
 
     /**
@@ -66,6 +65,7 @@ class Kernel extends HttpKernel
         'auth.webhook' => \OhMyBrew\ShopifyApp\Middleware\AuthWebhook::class,
         'auth.proxy' => \OhMyBrew\ShopifyApp\Middleware\AuthProxy::class,
         'billable' => \OhMyBrew\ShopifyApp\Middleware\Billable::class,
+        'FrameHeadersMiddleware' => \App\Http\Middleware\FrameHeadersMiddleware::class,
     ];
 
     /**

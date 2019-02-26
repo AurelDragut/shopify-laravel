@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-})->middleware(['auth.shop'])->name('home');
+})->middleware(['auth.shop','FrameHeadersMiddleware'])->name('home');
 
 Route::get('/feeds/inventory', 'FeedsController@inventoryfeed');
 Route::get('/feeds/prices','FeedsController@pricesfeed');
