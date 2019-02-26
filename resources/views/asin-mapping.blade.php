@@ -14,7 +14,7 @@
         <Product>
             <SKU>{{$product->sku}}</SKU>
             <StandardProductID>
-                <Type>EAN</Type>
+                <Type>{{$product->IdType}}</Type>
                 <Value>{{$product->barcode}}</Value>
             </StandardProductID>
             <Condition>

@@ -59,6 +59,7 @@ class ProductsDeleteJob implements ShouldQueue
         $feed .= '</AmazonEnvelope>';
         $feed = trim($feed);
         try {
+	    sleep(120);
             $amz = new \AmazonFeed(); //if there is only one store in config, it can be omitted
             $amz->setFeedType("_POST_PRODUCT_DATA_"); //feed types listed in documentation
             $amz->setFeedContent($feed); //can be either XML or CSV data; a file upload method is available as well

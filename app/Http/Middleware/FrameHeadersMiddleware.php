@@ -16,7 +16,7 @@ class FrameHeadersMiddleware
     public function handle($request, Closure $next)
     {
         $response = $next($request);
-        $response->header('X-Frame-Options', 'ALLOW FROM https://fashiononduty.myshopify.com/');
+        $response->header('X-Frame-Options', 'ALLOW-FROM https://fashiononduty.myshopify.com/');
         return $response;
     }
 }

@@ -26,7 +26,9 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
-        $schedule->command('queue:listen')->withoutOverlapping()->emailOutputTo('aurel.dragut@gmail.com');
+        //$schedule->command('queue:listen')->withoutOverlapping()->emailOutputTo('aurel.dragut@gmail.com');
+	$schedule->command('queue:listen --timeout=0 > /home/bitnami/sentFeeds.log')->withoutOverlapping()->emailOutputTo('aurel.dragut@gmail.com');
+
     }
 
     /**

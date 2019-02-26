@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     protected $fillable = [
-        'barcode', 'sku', 'price', 'inventory','response','updated'
+        'IdType', 'barcode', 'sku', 'price', 'inventory','response','updated'
     ];
 }
