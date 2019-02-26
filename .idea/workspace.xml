@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0ed1b6a2-9d60-4842-a7de-9e0cb5f4d7c4" name="Default Changelist" comment="Default Changelist">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -90,8 +90,8 @@
       <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="98" lean-forward="false" selection-start-line="10" selection-start-column="98" selection-end-line="10" selection-end-column="98" />
+            <state relative-caret-position="200">
+              <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -582,7 +582,7 @@
       <workItem from="1550000421786" duration="201000" />
       <workItem from="1550000660342" duration="2176000" />
       <workItem from="1550049357091" duration="3274000" />
-      <workItem from="1551160982640" duration="2380000" />
+      <workItem from="1551160982640" duration="2479000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1550001387012</created>
@@ -637,7 +637,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209779000" />
+    <option name="totallyTimeSpent" value="209878000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -999,8 +999,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="98" lean-forward="false" selection-start-line="10" selection-start-column="98" selection-end-line="10" selection-end-column="98" />
+        <state relative-caret-position="200">
+          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding />
         </state>
       </provider>
