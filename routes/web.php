@@ -14,8 +14,7 @@
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function ($route, $request, $response) {
-    $response->header("X-Frame-Options","nALLOW-FROM https://fashiononduty.myshopify.com/");
+Route::get('/', function () {
     return view('welcome');
 })->middleware(['auth.shop','FrameHeadersMiddleware'])->name('home');
 
